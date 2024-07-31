@@ -25,6 +25,7 @@ Contents
 
 .. toctree::
    :caption: University Program
-   :maxdepth: 1
+   :maxdepth: 2
 
    university/index
+   academic/index
