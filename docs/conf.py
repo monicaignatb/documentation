@@ -8,7 +8,7 @@ author = 'Analog Devices, Inc.'
 # -- General configuration ---------------------------------------------------
 
 extensions = [
-    "adi_doctools"
+    "adi_doctools", 'sphinx.ext.autodoc'
 ]
 
 needs_extensions = {
