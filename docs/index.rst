@@ -28,4 +28,4 @@ Contents
    :maxdepth: 2
 
    university/index
-   academic/index
+   academic content/index

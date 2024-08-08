@@ -25,3 +25,4 @@ interref_repos = ['doctools']
 # -- Options for HTML output --------------------------------------------------
 
 html_theme = 'cosmic'
+linkcheck_validate = True
