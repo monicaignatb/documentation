@@ -3,6 +3,7 @@ Academic Content
 
 Mission
 -------------------------------------------------------------------------------
+Workshops
 
 Analog Devices is as passionate about educating the next generation of young
 circuit design engineers as it is about pioneering the next technological
