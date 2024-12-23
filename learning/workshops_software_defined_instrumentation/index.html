@@ -359,9 +359,11 @@ A single device encapsulating more instruments used for measurements, signal gen
 <li><p>How to generate and display signals with the lab tools Analog Devices provides</p></li>
 </ul>
 <p>Pre-requisites</p>
-<p>ADALM2000 drivers installation: &lt;<a class="reference external" href="https://github.com/analogdevicesinc/plutosdr-m2k-drivers-win/releases">https://github.com/analogdevicesinc/plutosdr-m2k-drivers-win/releases</a>&gt;
-Install Scopy software from &lt;<a class="reference external" href="https://github.com/analogdevicesinc/scopy/releases/tag/v1.4.1">https://github.com/analogdevicesinc/scopy/releases/tag/v1.4.1</a>&gt;</p>
-<p>Demo 1 - Scope and Signal generator channels – Cascaded LP filters</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/analogdevicesinc/plutosdr-m2k-drivers-win/releases">ADALM2000 drivers installation:</a></p></li>
+<li><p><a class="reference external" href="https://github.com/analogdevicesinc/scopy/releases/tag/v1.4.1">Install Scopy software from</a></p></li>
+</ul>
+<p><strong>Demo 1 - Scope and Signal generator channels – Cascaded LP filters</strong></p>
 <p>Materials</p>
 <ul class="simple">
 <li><p>ADALM2000 Active Learning Module</p></li>
@@ -369,13 +371,87 @@ Install Scopy software from &lt;<a class="reference external" href="https://
 <li><p>2 x 1 KΩ resistors</p></li>
 <li><p>2 x 0.1 uF capacitors (marked 104)</p></li>
 </ul>
-<p>Hardware setup</p>
-<p>Steps:
-1. Open Network Analyzer
-2. Set the sweep to logarithmic
-3. Set the start frequency to 100Hz and stop to 20kHz
-4. Set the magnitude axis between -50dB and 10dB
-5. Set the phase axis between -180 and 90 degrees</p>
+<p><strong>Hardware setup</strong></p>
+<figure class="align-left" id="fig-demo1hw">
+<img alt="../../_images/demo1hw.png" src="../../_images/demo1hw.png" />
+</figure>
+<figure class="align-default" id="id4">
+<span id="fig-demo1bb"></span><img alt="../../_images/demo1bb.png" src="../../_images/demo1bb.png" />
+<figcaption>
+<p><span class="caption-number">Figure 3 </span><span class="caption-text">Breadboard connections</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Steps</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Open Network Analyzer</p></li>
+<li><p>Set the sweep to logarithmic</p></li>
+<li><p>Set the start frequency to 100Hz and stop to 20kHz</p></li>
+<li><p>Set the magnitude axis between -50dB and 10dB</p></li>
+<li><p>Set the phase axis between -180 and 90 degrees</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-center" id="id5">
+<span id="fig-demo1waves"></span><img alt="../../_images/demo1waves.png" src="../../_images/demo1waves.png" />
+<figcaption>
+<p><span class="caption-number">Figure 4 </span><span class="caption-text">Results for Bode Diagram</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Second stage filter</p>
+<figure class="align-left" id="fig-demo1hw1">
+<img alt="../../_images/demo1hw1.png" src="../../_images/demo1hw1.png" />
+</figure>
+<figure class="align-center" id="id6">
+<span id="fig-demo1bb1"></span><img alt="../../_images/demo1bb1.png" src="../../_images/demo1bb1.png" />
+<figcaption>
+<p><span class="caption-number">Figure 5 </span><span class="caption-text">Schematic and Breadboard connections</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Steps:</p>
+<ol class="arabic simple">
+<li><p>Connect the Scope Channel 2 after the first RC group and do a single sweep</p></li>
+<li><p>Take a signal snapshot to preserve the result as a reference</p></li>
+<li><p>Connect the Scope Channel 2 after the second RC stage and perform another sweep</p></li>
+</ol>
+<figure class="align-center" id="id7">
+<span id="fig-demo1waves1"></span><img alt="../../_images/demo1waves1.png" src="../../_images/demo1waves1.png" />
+<figcaption>
+<p><span class="caption-number">Figure 6 </span><span class="caption-text">Results for Bode Diagram</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Demo 2 - Digital Pattern Generator and Scope – AD5626 component – SPI controlled and analog signal visualized using Scope</strong></p>
+<p>Materials</p>
+<ul class="simple">
+<li><p>ADALM2000 Active Learning Module</p></li>
+<li><p>Solder-less breadboard</p></li>
+<li><p>Jumper wires</p></li>
+<li><p>1 - AD5626 12-bit nanoDAC</p></li>
+<li><p>1 x 2.2 KΩ resistor</p></li>
+<li><p>1 x 0.001 uF capacitor(marked 102)</p></li>
+<li><p>1 x 0.1 uF capacitor(marked 104)</p></li>
+<li><p>1 x 10 uF capacitor</p></li>
+</ul>
+<p>Theory of operation</p>
+<p>SPI Transfer:</p>
+<figure class="align-center" id="fig-demo2spi">
+<img alt="../../_images/demo2spi.png" src="../../_images/demo2spi.png" />
+</figure>
+<figure class="align-center" id="id8">
+<span id="fig-demo2spi1"></span><img alt="../../_images/demo2spi1.png" src="../../_images/demo2spi1.png" />
+<figcaption>
+<p><span class="caption-number">Figure 7 </span><span class="caption-text">SPI Interface signals</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Hardware Setup</p>
+<figure class="align-left" id="fig-demo2hw">
+<img alt="../../_images/demo2hw.png" src="../../_images/demo2hw.png" />
+</figure>
+<figure class="align-center" id="id9">
+<span id="fig-demo2bb"></span><img alt="../../_images/demo2bb.png" src="../../_images/demo2bb.png" />
+<figcaption>
+<p><span class="caption-number">Figure 8 </span><span class="caption-text">Schematic and Breadboard connections</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 
