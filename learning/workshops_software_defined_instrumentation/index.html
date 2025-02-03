@@ -7,20 +7,20 @@
 
     <title>Software Defined Instrumentation &#8212; System Level Documentation  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8e8a900e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/style.min.css?v=7f94efc5" />
+    <link rel="stylesheet" type="text/css" href="../../_static/app.min.css?v=2acfe7ed" />
     <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script defer="" src="../../_static/app.umd.js?v=689b8755"></script>
+    <script defer="" src="../../_static/app.umd.js?v=2e023412"></script>
     <link rel="icon" href="../../_static/icon.svg"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Forking and publishing" href="../../contributing/forking_publishing.html" />
+    <link rel="next" title="Introduction to Electronics" href="../workshops_introduction_to_electronics/index.html" />
     <link rel="prev" title="What software do I need for my SDR?" href="../workshop_what_sw_for_sdr/index.html" />
    
   
-  <meta name="global_root" content="../../../">
-  <meta name="repo" content="documentation">
+  <meta name="repository" content="documentation">
+  <meta name="version" content="">
   
 
 
@@ -40,7 +40,6 @@
   }
 </style>
   </head><body>
-  <div class="banner"></div>
   <input type="checkbox" id="input-show-toc">
   <input type="checkbox" id="input-show-localtoc">
   <input type="checkbox" id="input-show-repotoc">
@@ -78,15 +77,6 @@
   <div class="repotoc-tree overlay">
     <root>
   <a href="../../index.html" class="current">System Level</a>
-  <a href="../../../hdl/index.html">HDL</a>
-  <a href="../../../testbenches/index.html">HDL Testbenches</a>
-  <a href="../../../pyadi-iio/index.html">Hardware Python Interfaces</a>
-  <a href="../../../libiio/index.html">libiio</a>
-  <a href="../../../no-OS/index.html">no-OS</a>
-  <a href="../../../precision-converters-firmware/index.html">Precision Converters Firmware</a>
-  <a href="../../../PrecisionToolbox/index.html">Precision Toolbox</a>
-  <a href="../../../scopy/index.html">Scopy</a>
-  <a href="../../../doctools/index.html">Doctools</a>
 </root>
 
   </div>
@@ -128,15 +118,6 @@ Content on this topic
 <div class="repotoc-tree">
   <root>
   <a href="../../index.html" class="current">System Level</a>
-  <a href="../../../hdl/index.html">HDL</a>
-  <a href="../../../testbenches/index.html">HDL Testbenches</a>
-  <a href="../../../pyadi-iio/index.html">Hardware Python Interfaces</a>
-  <a href="../../../libiio/index.html">libiio</a>
-  <a href="../../../no-OS/index.html">no-OS</a>
-  <a href="../../../precision-converters-firmware/index.html">Precision Converters Firmware</a>
-  <a href="../../../PrecisionToolbox/index.html">Precision Toolbox</a>
-  <a href="../../../scopy/index.html">Scopy</a>
-  <a href="../../../doctools/index.html">Doctools</a>
 </root>
 
 </div>
@@ -314,6 +295,9 @@ Content on this topic
 <li class="toctree-l2"><a class="reference internal" href="../tools_for_hs/index.html">Tools for High-Speed Mixed Signal System Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../workshop_what_sw_for_sdr/index.html">What software do I need for my SDR?</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Software Defined Instrumentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workshops_introduction_to_electronics/index.html">Introduction to Electronics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workshops_embedded_baremetal/index.html">Embedded Baremetal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workshops_embedded_linux/index.html">Embedded Linux</a></li>
 </ul>
 </li>
 </ul>
@@ -366,10 +350,10 @@ Content on this topic
 <p>​With 12-bit ADCs and DACs running at 100 MSPS, brings the power of high-performance lab equipment to the palm of your hand, enabling electrical engineering students and hobbyists to explore signals and systems into the tens of MHz without the cost and bulk associated with traditional lab gear. ​</p>
 <p>​When coupled with Analog Devices’ Scopy™ graphical application software running on a computer, provides the user with high performance instrumentation.​</p>
 <figure class="align-left" id="fig-m2k">
-<img alt="../../_images/m2k.png" src="../../_images/m2k.png" />
+<img alt="../../_images/m2k1.png" src="../../_images/m2k1.png" />
 </figure>
 <figure class="align-center" id="id2">
-<span id="fig-scopy"></span><img alt="../../_images/scopy.png" src="../../_images/scopy.png" />
+<span id="fig-scopy"></span><img alt="../../_images/scopy1.png" src="../../_images/scopy1.png" />
 <figcaption>
 <p><span class="caption-number">Figure 2 </span><span class="caption-text">M2k and Scopy software</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
@@ -377,7 +361,7 @@ Content on this topic
 </section>
 <section id="hands-on-activity">
 <h2>Hands-on activity<a class="headerlink" href="#hands-on-activity" title="Link to this heading"></a></h2>
-<p>By the end of this lab, you will learn:</p>
+<p>By the end of this workshop, you will learn:</p>
 <ul class="simple">
 <li><p>How to use a desktop Oscilloscope and Signal generator channels by operating a Network Analyzer, as well as Digital Pattern generator</p></li>
 <li><p>How to interface an analog front end simple circuit with M2K channels</p></li>
@@ -407,13 +391,13 @@ Content on this topic
 <p><strong>First Stage Filter</strong></p>
 <p><em>Hardware setup</em></p>
 <figure class="align-center" id="id3">
-<span id="fig-demo1hw"></span><img alt="../../_images/demo1hw.png" src="../../_images/demo1hw.png" />
+<span id="fig-demo1hw"></span><img alt="../../_images/demo1hw2.png" src="../../_images/demo1hw2.png" />
 <figcaption>
 <p><span class="caption-number">Figure 3 </span><span class="caption-text">Schematic for first stage filter</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="id4">
-<span id="fig-demo1bb"></span><img alt="../../_images/demo1bb.png" src="../../_images/demo1bb.png" />
+<span id="fig-demo1bb"></span><img alt="../../_images/demo1bb2.png" src="../../_images/demo1bb2.png" />
 <figcaption>
 <p><span class="caption-number">Figure 4 </span><span class="caption-text">Breadboard connections for first stage filter</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
@@ -429,17 +413,17 @@ Content on this topic
 </ol>
 </div></blockquote>
 <figure class="align-center" id="id5">
-<span id="fig-demo1waves"></span><img alt="../../_images/demo1waves.png" src="../../_images/demo1waves.png" />
+<span id="fig-demo1waves"></span><img alt="../../_images/demo1waves2.png" src="../../_images/demo1waves2.png" />
 <figcaption>
 <p><span class="caption-number">Figure 5 </span><span class="caption-text">Results for Bode Diagram</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <p>Second stage filter</p>
 <figure class="align-left" id="fig-demo1hw1">
-<img alt="../../_images/demo1hw1.png" src="../../_images/demo1hw1.png" />
+<img alt="../../_images/demo1hw11.png" src="../../_images/demo1hw11.png" />
 </figure>
 <figure class="align-center" id="id6">
-<span id="fig-demo1bb1"></span><img alt="../../_images/demo1bb1.png" src="../../_images/demo1bb1.png" />
+<span id="fig-demo1bb1"></span><img alt="../../_images/demo1bb11.png" src="../../_images/demo1bb11.png" />
 <figcaption>
 <p><span class="caption-number">Figure 6 </span><span class="caption-text">Schematic and Breadboard connections</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
@@ -451,7 +435,7 @@ Content on this topic
 <li><p>Connect the Scope Channel 2 after the second RC stage and perform another sweep</p></li>
 </ol>
 <figure class="align-center" id="id7">
-<span id="fig-demo1waves1"></span><img alt="../../_images/demo1waves1.png" src="../../_images/demo1waves1.png" />
+<span id="fig-demo1waves1"></span><img alt="../../_images/demo1waves11.png" src="../../_images/demo1waves11.png" />
 <figcaption>
 <p><span class="caption-number">Figure 7 </span><span class="caption-text">Results for Bode Diagram</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
 </figcaption>
@@ -481,7 +465,7 @@ Content on this topic
 </figure>
 <p><em>Hardware Setup</em></p>
 <figure class="align-left" id="fig-demo2hw">
-<img alt="../../_images/demo2hw.png" src="../../_images/demo2hw.png" />
+<img alt="../../_images/demo2hw1.png" src="../../_images/demo2hw1.png" />
 </figure>
 <figure class="align-center" id="id9">
 <span id="fig-demo2bb"></span><img alt="../../_images/demo2bb.png" src="../../_images/demo2bb.png" />
@@ -517,7 +501,7 @@ Content on this topic
 <li><p>With respect to the stated conditions, the DIO3 signal needs to be set as pulse type 100kHz frequency, Low number of samples equal to 5, High 75, for the set frequency of the SPI 1MHz.</p></li>
 </ul>
 <figure class="align-center" id="id10">
-<span id="fig-demo2scopy"></span><img alt="../../_images/demo2scopy.png" src="../../_images/demo2scopy.png" />
+<span id="fig-demo2scopy"></span><img alt="../../_images/demo2scopy3.png" src="../../_images/demo2scopy3.png" />
 <figcaption>
 <p><span class="caption-number">Figure 10 </span><span class="caption-text">SPI messages</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
 </figcaption>
@@ -531,7 +515,7 @@ Content on this topic
 <li><p>Change the initially transmitted values</p></li>
 </ul>
 <figure class="align-center" id="id11">
-<span id="fig-demo2scopy1"></span><img alt="../../_images/demo2scopy1.png" src="../../_images/demo2scopy1.png" />
+<span id="fig-demo2scopy1"></span><img alt="../../_images/demo2scopy11.png" src="../../_images/demo2scopy11.png" />
 <figcaption>
 <p><span class="caption-number">Figure 11 </span><span class="caption-text">Analog Voltage from the DAC</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
 </figcaption>
@@ -578,7 +562,7 @@ following the tutorial yourself:</p>
               <div class="related">
                 &nbsp;
     <a href="../workshop_what_sw_for_sdr/index.html" title="Previous document (Alt+Shift+LeftArrow)" class="prev">What software do I need for my SDR?</a>
-    <a href="../../contributing/forking_publishing.html" title="Next document (Alt+Shift+RightArrow)" class="next">Forking and publishing</a>
+    <a href="../workshops_introduction_to_electronics/index.html" title="Next document (Alt+Shift+RightArrow)" class="next">Introduction to Electronics</a>
               </div>
           
         </div>
