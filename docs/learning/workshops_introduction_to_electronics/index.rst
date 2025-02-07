@@ -21,18 +21,17 @@ Theoretical content
 - What is a transistor and what role does it have
 - ADALM2000 board overview
 
-
-**Why Electronics?​**
+**Why Electronics?**
 
 Every Electronics or Electrical Engineering student has received at least once the question: why did you choose electronics?
 How can one answer this question better than: Why not?
 
 1. It offers diverse career opportunities:
 
-- Wireless Communications Engineer​
-- Network Engineer​
-- Electronics Design Engineer​
-- Embedded Systems Engineer​
+- Wireless Communications Engineer
+- Network Engineer
+- Electronics Design Engineer
+- Embedded Systems Engineer
 - Satellite Communications Engineer
 
 2. It brings to table inovation and technological advancement
@@ -41,7 +40,7 @@ How can one answer this question better than: Why not?
 
 4. It offers continuous learning
 
-**What is an IC?​**
+**What is an IC?**
 
 An integrated circuit (IC) is an assembly of electronic components in which hundreds to millions of transistors, resistors, and capacitors are interconnected and built up on a thin substrate of semiconductor material (usually silicon) to form a small chip or wafer. Integrated circuits are the building blocks for most electronic devices and equipment.
 
@@ -58,20 +57,16 @@ An integrated circuit (IC) is an assembly of electronic components in which hund
 - Increased reliability and performance.
 - Cost efficiency.
 
-.. _fig-ic:
-
 .. figure:: ic.png
    :align: center
    :width: 500
-   
+
    ICs are everywhere
-   
-.. _fig-circuit:
 
 .. figure:: circuit.png
    :align: center
    :width: 500
-   
+
    LSI – Large Scale Integration circuits compared to the corresponding prototype circuit 1970-1972
 
 **Transistors - what kind of species is that?**
@@ -88,14 +83,12 @@ A transistor is a miniature semiconductor that regulates or controls current o
 - Digital Circuits: Logic gates, microprocessors.
 - Power Electronics: Power supplies, motor controllers.
 
-.. _fig-transistor:
-
 .. figure:: transistor.png
    :align: center
    :width: 300
-   
+
    Transistor - the base of Electronics
-   
+
 `Functionality`
 
 - Cut Off ("off"):  Emitter > Base < Collector
@@ -103,42 +96,41 @@ A transistor is a miniature semiconductor that regulates or controls current o
 - Forward Active ("proportional"):  Emitter < Base < Collector
 - Reverse Active ("negative proportional"):  Emitter > Base > Collector
 
-.. _fig-vce_ib:
-
 .. figure:: vce_ib.png
    :align: center
    :width: 300
-   
+
    Output Characteristics - common emitter configuration
-   
+
 `How many transistors are needed to create a logic gate?`
 
-Logic gates built with transistors 
-  
-+---------------------------+---------------------------+
-| .. image:: and.png        | .. image:: not.png        |
-|    :width: 280            |    :width: 300            |
-|    :alt: AND              |    :alt: NOT              |
-+---------------------------+---------------------------+
+Logic gates built with transistors
 
-   
+.. grid::
+   :widths: 50% 50%
+
+   .. image:: and.png
+      :width: 280
+      :alt: AND
+
+   .. image:: not.png
+      :width: 300
+      :alt: NOT
+
 `ADALM2000`
 
-The ADALM2000 (M2K) Advanced Active Learning Module is an affordable USB-powered data acquisition module, that can be used to introduce fundamentals of electrical engineering in a self or instructor lead setting.​
+The ADALM2000 (M2K) Advanced Active Learning Module is an affordable USB-powered data acquisition module, that can be used to introduce fundamentals of electrical engineering in a self or instructor lead setting.
 
-​With 12-bit ADCs and DACs running at 100 MSPS, brings the power of high-performance lab equipment to the palm of your hand, enabling electrical engineering students and hobbyists to explore signals and systems into the tens of MHz without the cost and bulk associated with traditional lab gear. ​
+With 12-bit ADCs and DACs running at 100 MSPS, brings the power of high-performance lab equipment to the palm of your hand, enabling electrical engineering students and hobbyists to explore signals and systems into the tens of MHz without the cost and bulk associated with traditional lab gear.
 
-​When coupled with Analog Devices' Scopy™ graphical application software running on a computer, provides the user with high performance instrumentation.​
-
-.. _fig-m2k:
+When coupled with Analog Devices' Scopy™ graphical application software running on a computer, provides the user with high performance instrumentation.
 
 .. figure:: m2k.png
    :align: left
-.. _fig-scopy:
 
 .. figure:: scopy.png
    :align: center
-   
+
    M2k and Scopy software
 
 Hands-on activity
@@ -154,7 +146,6 @@ By the end of this workshop, you will learn:
 - How to drive a transistor
 - How to create a logic function for performing a specific task 
 
-
 **Activities**
 
 - Low pass filter transfer function
@@ -162,11 +153,10 @@ By the end of this workshop, you will learn:
 - Back to the analog world - Transistors
 - Home made battery
 
-
 **Pre-requisites**
 
-- `ADALM2000 drivers installation <https://github.com/analogdevicesinc/plutosdr-m2k-drivers-win/releases>`__
-- `Install Scopy software <https://github.com/analogdevicesinc/scopy/releases/tag/v1.4.1>`__
+- :git-plutosdr-m2k-drivers-win:`ADALM2000 drivers installation <releases+>`
+- :git-scopy:`Install Scopy software <releases/tag/v1.4.1+>`
 
 **Hands-on activity 1 - Scope and Signal generator channels – Cascaded LP filters**
 
@@ -181,14 +171,10 @@ By the end of this workshop, you will learn:
 
 *Hardware setup*
 
-.. _fig-demo1hw:
-
 .. figure:: demo1hw.png
    :align: center
-   
+
    Schematic for first stage filter
-   
-.. _fig-demo1bb:
 
 .. figure:: demo1bb.png
    :align: center
@@ -197,83 +183,70 @@ By the end of this workshop, you will learn:
 
 Steps
 
-	1. Open Network Analyzer
-	2. Set the sweep to logarithmic
-	3. Set the start frequency to 100Hz and stop to 20kHz
-	4. Set the magnitude axis between -50dB and 10dB
-	5. Set the phase axis between -180 and 90 degrees
-	
-.. _fig-demo1waves:
+ 1. Open Network Analyzer
+ 2. Set the sweep to logarithmic
+ 3. Set the start frequency to 100Hz and stop to 20kHz
+ 4. Set the magnitude axis between -50dB and 10dB
+ 5. Set the phase axis between -180 and 90 degrees
 
 .. figure:: demo1waves.png
    :align: center
 
    Results for Bode Diagram
- 
-**Second stage filter**
 
-.. _fig-demo1hw1:
+**Second stage filter**
 
 .. figure:: demo1hw1.png
    :align: left
-.. _fig-demo1bb1:
 
 .. figure:: demo1bb1.png
    :align: center
 
    Schematic and Breadboard connections
-   
+
 Steps:
 
 1. Connect the Scope Channel 2 after the first RC group and do a single sweep
 2. Take a signal snapshot to preserve the result as a reference
 3. Connect the Scope Channel 2 after the second RC stage and perform another sweep
 
-.. _fig-demo1waves1:
-
 .. figure:: demo1waves1.png
    :align: center
 
    Results for Bode Diagram
-  
+
 **Hands-on activity 2 - Traffic lights control**
 
-This demo will showcase the usage of logic gates to implement a logic function which describes the functionality of a well-known device: a traffic light. 
+This demo will showcase the usage of logic gates to implement a logic function which describes the functionality of a well-known device: a traffic light.
 
 *Materials*
 
-- ADALM2000 Active Learning Module 
-- Jumper wires 
-- 1 SN74HC08N part 
-- 1 SN74HC32N part 
-- 1 SN74HC04N part 
-- 1 Yellow LED 
-- 1 Red LED 
-- 1 Green LED 
+- ADALM2000 Active Learning Module
+- Jumper wires
+- 1 SN74HC08N part
+- 1 SN74HC32N part
+- 1 SN74HC04N part
+- 1 Yellow LED
+- 1 Red LED
+- 1 Green LED
 
 *Theory of operation*
 
-Logic sequence of a traffic light is the one bellow: 
-
-.. _fig-rgy:
+Logic sequence of a traffic light is the one bellow:
 
 .. figure:: rgy.png
    :align: center
    :width: 300
 
-You will use two logic inputs to control the traffic lights, those inputs are marked A and B, the sequence is the one bellow: 
-
-.. _fig-rgy1:
+You will use two logic inputs to control the traffic lights, those inputs are marked A and B, the sequence is the one bellow:
 
 .. figure:: rgy1.png
    :align: center
    :width: 400
-   
+
    Flow diagram
 
 Truth table for the logic function that describes the traffic lights sequence
-
-.. _fig-demo2:
 
 .. figure:: demo2.png
    :align: center
@@ -283,69 +256,73 @@ Truth table for the logic function that describes the traffic lights sequence
 
 The circuit functionality is represented in the schematic:
 
-.. _fig-demo2hw:
-
 .. figure:: demo2hw.png
    :align: center
    :width: 300
-   
+
    Schematic
-   
- 
-Components Pinout 
-  
-+-----------------------------------+-----------------------------------+-----------------------------------+
-|         **SN74HC04N**             |         **SN74HC04N**             |        **LED Terminals**          |
-+-----------------------------------+-----------------------------------+-----------------------------------+
-| .. image:: SN74HC04N.png          | .. image:: SN74HC08N.png          | .. image:: led.png                |
-|    :width: 300                    |    :width: 300                    |    :width: 300                    |
-|    :alt: SN74HC04N                |    :alt: SN74HC08N                |    :alt: LED                      |
-+-----------------------------------+-----------------------------------+-----------------------------------+
+
+Components Pinout
+
+.. grid::
+   :widths: 33% 33% 33%
+
+   .. figure:: SN74HC04N.png
+      :width: 300
+      :alt: SN74HC04N
+
+      SN74HC04N
+
+   .. figure:: SN74HC08N.png
+      :width: 300
+      :alt: SN74HC08N
+
+      SN74HC04N
+
+   .. figure:: led.png
+      :width: 300
+      :alt: LED
+
+      LED Terminals
+
+Steps:
+
+1. Place the ICs on the breadboard with each pin row on one side of the breadboard delimitator.
+2. Open Scopy application
+3. Open the Oscilloscope instrument
+4. Open the Power instrument
+5. Connect the V+ wire to pins 14 of the both ICs - VCC
+6. Connect GND pin of the M2K to pin 7 of both ICs
+7. Connect DIO 0 pin to SN74HC04N pin 1
+8. Connect DIO 0 pin to SN74HC08N pin 1
+9. Connect DIO 1 pin to SN74HC04N pin 3
+10. Connect DIO 1 pin to Y LED
+11. Connect SN74HC04N pin 2 to R LED
+12. Connect SN74HC04N pin 4 to SN74HC08N pin 2
+13. Connect SN74HC08N pin 3 to G LED
+14. Set the V+ to 3.3V and press the Enable button
 
 
-   
-Steps: 
+*Results*
 
-1.	Place the ICs on the breadboard with each pin row on one side of the breadboard delimitator.
-2.	Open Scopy application
-3.	Open the Oscilloscope instrument
-4.	Open the Power instrument
-5.	Connect the V+ wire to pins 14 of the both ICs - VCC
-6.	Connect GND pin of the M2K to pin 7 of both ICs
-7.	Connect DIO 0 pin to SN74HC04N pin 1
-8.	Connect DIO 0 pin to SN74HC08N pin 1
-9.	Connect DIO 1 pin to SN74HC04N pin 3
-10.	Connect DIO 1 pin to Y LED
-11.	Connect SN74HC04N pin 2 to R LED
-12.	Connect SN74HC04N pin 4 to SN74HC08N pin 2
-13.	Connect SN74HC08N pin 3 to G LED
-14.	Set the V+ to 3.3V and press the Enable button
-
-
-*Results* 
-
-•	Open the Scopy Digital IO and Power instruments: 
-•	Toggle the DIO0 and DIO1 digital pins according to the logical function truth table and verify the outputs match the table results 
-
-.. _fig-demo2scopy:
+• Open the Scopy Digital IO and Power instruments:
+• Toggle the DIO0 and DIO1 digital pins according to the logical function truth table and verify the outputs match the table results
 
 .. figure:: demo2scopy.png
    :align: center
    :width: 400
-   
+
    Scopy setup
-   
+
 **Challenge**
 
-•	Implement a logical OR function using SN74HC32N part from the kit
-•	Pinout:
-
-.. _fig-SN74HC32N:
+• Implement a logical OR function using SN74HC32N part from the kit
+• Pinout:
 
 .. figure:: SN74HC32N.png
    :align: center
    :width: 300
-   
+
    Logical OR
 
 
@@ -353,66 +330,63 @@ Steps:
 
 The demo will describe the output characteristics of a BJT NPN transistor using modern instrumentation tools.
 
-*Materials* 
+*Materials*
 
-•	ADALM2000 Active Learning Module
-•	Jumper wires
-•	1 - 100KΩResistor
-•	1 - 100ΩResistor
-•	1 - small signal NPN transistor - 2N3904
-•	1 - small signal PNP transistor - 2N3906
+• ADALM2000 Active Learning Module
+• Jumper wires
+• 1 - 100KΩResistor
+• 1 - 100ΩResistor
+• 1 - small signal NPN transistor - 2N3904
+• 1 - small signal PNP transistor - 2N3906
 
 *Theory of operation*
 
 2N2904 Pinout
 
-+------------------------+------------------------+
-| .. image:: npn.png     | .. image:: npn1.png    | 
-|    :width: 200         |    :width: 200         |
-|    :alt: pnp           |    :alt: SN74HC08N     |
-+------------------------+------------------------+
+.. grid::
+   :widths: 50% 50%
+
+   .. image:: npn.png
+      :width: 200
+      :alt: pnp
+
+   .. image:: npn1.png
+      :width: 200
+      :alt: SN74HC08N
 
 *Hardware setup*
 
-•	Place the transistor and resistors on the breadboard.
-•	Make the connections between ADALM2000 and circuit as shown below.
-
-.. _fig-npn2:
+• Place the transistor and resistors on the breadboard.
+• Make the connections between ADALM2000 and circuit as shown below.
 
 .. figure:: npn2.png
    :align: center
    :width: 350
-   
+
    ADALM2000 connections
-   
+
 *Steps*
 
-1.	Open Scopy application
-2.	Create a CSV file with a column having integer values from 0 to 5(0, 1, 2, 3, 4), save it
-3.	Open the Waveform generator instrument and select Channel 2, load the previously created csv file and make the setup:
-
-.. _fig-demo2scopy1:
+1. Open Scopy application
+2. Create a CSV file with a column having integer values from 0 to 5(0, 1, 2, 3, 4), save it
+3. Open the Waveform generator instrument and select Channel 2, load the previously created csv file and make the setup:
 
 .. figure:: demo2scopy1.png
    :align: center
    :width: 600
-   
-4.	Select Channel 1, make the setup below:
 
-.. _fig-demo2scopy2:
+4. Select Channel 1, make the setup below:
 
 .. figure:: demo2scopy2.png
    :align: center
    :width: 600
-   
-5.	Open the scope and select the XY view
-6.	Add a math channel with the following function: M1 = t0/100  - it represents the Ic current, given the 100 ohms collector resistor
- 
+
+5. Open the scope and select the XY view
+6. Add a math channel with the following function: M1 = t0/100  - it represents the Ic current, given the 100 ohms collector resistor
+
 `Results`
 
-7.	Observe the output characteristics of the NPN transistor Ic = f(Vce)
-
-.. _fig-demo2scopyres:
+7. Observe the output characteristics of the NPN transistor Ic = f(Vce)
 
 .. figure:: demo2scopyres.png
    :align: center
@@ -420,10 +394,8 @@ The demo will describe the output characteristics of a BJT NPN transistor using 
 
 **Challenge**
 
-•	Obtain the characteristics for a PNP transistor provided.
-•	The curve trace should look like the one in the image:
-   
-.. _fig-demo2scopych:
+• Obtain the characteristics for a PNP transistor provided.
+• The curve trace should look like the one in the image:
 
 .. figure:: demo2scopych.png
    :align: center
@@ -437,19 +409,17 @@ This demo is instructor-led and intends to implement a proof of concept for a ba
 
 *Materials:*
 
-•	ADALM2000 Active Learning Module
-•	Jumper wires (wires with alligator clips will work best)
-•	3 lemons: large, fresh, “juicy” lemons work best.
-•	Zinc plated screws or nails
-•	Copper plated coins or copper nails or heavy gauge (14 or 12) copper wire.
-•	Red LED
+• ADALM2000 Active Learning Module
+• Jumper wires (wires with alligator clips will work best)
+• 3 lemons: large, fresh, “juicy” lemons work best.
+• Zinc plated screws or nails
+• Copper plated coins or copper nails or heavy gauge (14 or 12) copper wire.
+• Red LED
 
 *Hardware Setup*
 
-1. Insert a copper penny into a small cut or push a copper nail or heavy gauge wire into one side of the lemon. 
+1. Insert a copper penny into a small cut or push a copper nail or heavy gauge wire into one side of the lemon.
 2. Push a galvanized (zinc coated) screw or nail into the other side of the lemon. The zinc and copper electrodes must not touch.
-
-.. _fig-demo4:
 
 .. figure:: demo4.png
    :align: center
@@ -460,72 +430,61 @@ This demo is instructor-led and intends to implement a proof of concept for a ba
 
 You should be able to observe how the Red LED is lit by the 4 or more lemon-cells battery
 
-
 Slide Deck, booklet and additional materials
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Since this tutorial is also designed to be presented as a live, hands-on
 workshop, a slide deck is provided here:
 
-.. ADMONITION:: Download
+.. admonition:: Download
 
    :download:`Introduction to Electronics Slide Deck <ElectronicsBasics_nov24.pdf>`
 
 A complete booklet of the hands-on activity is also provided, as a companion to
-following the tutorial yourself: 
+following the tutorial yourself:
 
-.. ADMONITION:: Download
+.. admonition:: Download
 
   :download:`Introduction to Electronics Booklet <Ebasics Booklet.pdf>`
-  
-Comma Separated Values file used for generating the base step voltage needed for the Transistor Characteristic demo: 
 
-.. ADMONITION:: Download
+Comma Separated Values file used for generating the base step voltage needed for the Transistor Characteristic demo:
+
+.. admonition:: Download
 
   :download:`Base Voltage Values <BaseVoltage.csv>`
-  
-  
+
 Takeaways
-~~~~~~~~~~~
+~~~~~~~~~
 
 Electronics can be both fun and challenging, but it brings many satisfactions
 
-ADALM2000 is a very versatile tool suited to use in various applications:​
+ADALM2000 is a very versatile tool suited to use in various applications:
 
-- Lab setups​
+- Lab setups
 
-- Advanced measurements​
+- Advanced measurements
 
-- Learning platforms​
+- Learning platforms
 
 - Research
- 
 
-Resources 
-~~~~~~~~~~~
- 
-https://wiki.analog.com/university
+Resources
+~~~~~~~~~
 
-https://wiki.analog.com/university/courses/alm1k/intro/real-voltage-sources
-
-https://wiki.analog.com/university/courses/electronics/electronics-lab-4
-
-https://wiki.analog.com/university/courses/engineering_discovery/lab_13
-
+* :dokuwiki:`university`
+* :dokuwiki:`university/courses/alm1k/intro/real-voltage-sources`
+* :dokuwiki:`university/courses/electronics/electronics-lab-4`
+* :dokuwiki:`university/courses/engineering_discovery/lab_13`
 
 *Specific hardware resources*
 
-https://www.britannica.com/technology/integrated-circuit/Photolithography
+* https://www.britannica.com/technology/integrated-circuit/Photolithography
+* https://learn.sparkfun.com/tutorials/transistors/all
 
-https://learn.sparkfun.com/tutorials/transistors/all
+*Inspiration*
 
-*Inspiration*  
-
-https://www.arenasolutions.com/resources/glossary/integrated-circuit/
-
-https://learn.sparkfun.com/tutorials/transistors/all
-
-https://www.electrical4u.com/transistor-characteristics/?utm_content=cmp-true
-
-https://www.101computing.net/creating-logic-gates-using-transistors/
+* https://www.arenasolutions.com/resources/glossary/integrated-circuit/
+* https://learn.sparkfun.com/tutorials/transistors/all
+* https://www.electrical4u.com/transistor-characteristics/?utm_content=cmp-true
+* https://www.101computing.net/creating-logic-gates-using-transistors/
 
